@@ -4,3 +4,6 @@
 [submodule "content/plugins/w3-total-cache"]
 	path = content/plugins/w3-total-cache
 	url = https://github.com/crowdfavorite-mirrors/wp-w3-total-cache.git
+[submodule "content/plugins/yet-another-related-posts-plugin"]
+	path = content/plugins/yet-another-related-posts-plugin
+	url = https://github.com/crowdfavorite-mirrors/wp-yet-another-related-posts-plugin
