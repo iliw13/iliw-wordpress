@@ -3,7 +3,7 @@ web1:
   shared_writable_dirs:
     - shared/
   after_deploy:
-    - "if [ ! -d shared/ ]; then mkdir shared/; fi"
+    - "if [ ! -d shared/ ]; then mkdir shared/ && echo "Created shared/ directory."; fi"
 db1:
   name: iliw-wordpress
   type: mysql
