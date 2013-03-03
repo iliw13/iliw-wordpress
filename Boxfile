@@ -1,0 +1,10 @@
+web1:
+  name: wordpress
+  shared_writable_dirs:
+    - shared/
+db1:
+  name: iliw-wordpress
+  type: mysql
+
+cache1:
+  type: memcached
