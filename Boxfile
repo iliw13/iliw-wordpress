@@ -2,6 +2,8 @@ web1:
   name: wordpress
   shared_writable_dirs:
     - shared/
+  after_deploy:
+    - "if [ ! -d shared/ ]; then mkdir shared/; fi"
 db1:
   name: iliw-wordpress
   type: mysql
