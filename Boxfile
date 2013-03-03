@@ -4,6 +4,8 @@ web1:
     - shared/
   after_deploy:
     - "if [ ! -d shared/ ]; then mkdir shared/ && echo Created shared/ directory.; fi"
+    # Adapted from Mark Jaquith's WP-Stack deployment scripts
+    - "for p in `find -L $(pwd) -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; if [ ! -d $t ]; then mkdir -p $t && echo Making $t; fi; done"
 db1:
   name: iliw-wordpress
   type: mysql
