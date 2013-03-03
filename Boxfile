@@ -1,11 +1,7 @@
 web1:
   name: wordpress
   shared_writable_dirs:
-    - shared/
-  after_deploy:
-    - "echo pwd && ls"
-    # Adapted from Mark Jaquith's WP-Stack deployment scripts
-    - "for p in `find -L $(pwd) -type l`; do t=`readlink $p | grep -o 'shared/.*$'`; if [ ! -d $t ]; then mkdir -p $t && echo Making $t; fi; done"
+    - content/uploads/
 db1:
   name: iliw-wordpress
   type: mysql
