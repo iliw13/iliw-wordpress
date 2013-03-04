@@ -1,9 +1,7 @@
 web1:
   name: wordpress
   shared_writable_dirs:
-    - content/uploads/
-    - content/w3tc/
-    - content/cache/
+    - content/
 db1:
   name: iliw-wordpress
   type: mysql
