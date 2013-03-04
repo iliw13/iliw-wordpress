@@ -2,8 +2,11 @@ web1:
   name: wordpress
   shared_writable_dirs:
     - wp-content/
+    - setup/
   before_deploy:
     - "cp -rf content/* `pwd`/wp-content/"
+    - "if [ ! -x `pwd`/setup/.htaccess ]; then mv htaccess `pwd`/setup/.htaccess; fi"
+    - "rm htaccess"
 db1:
   name: iliw-wordpress
   type: mysql
