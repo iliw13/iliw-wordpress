@@ -1,7 +1,6 @@
 web1:
   name: wordpress
   shared_writable_dirs:
-    - setup/
     - content/uploads/
     - content/w3tc/
     - content/cache/
