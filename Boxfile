@@ -5,8 +5,7 @@ web1:
     - setup/
   before_deploy:
     - "cp -rf content/* `pwd`/wp-content/"
-    - "if [ ! -x `pwd`/setup/.htaccess ]; then mv htaccess `pwd`/setup/.htaccess; fi"
-    - "rm htaccess"
+    - "if [ ! -e setup/.htaccess ]; then cp htaccess setup/.htaccess; fi"
 db1:
   name: iliw-wordpress
   type: mysql
