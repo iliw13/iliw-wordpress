@@ -3,7 +3,7 @@ web1:
   shared_writable_dirs:
     - wp-content/
   before_deploy:
-    - "echo cp -rf content/* `pwd`/wp-content/"
+    - "cp -rf content/* `pwd`/wp-content/"
 db1:
   name: iliw-wordpress
   type: mysql
