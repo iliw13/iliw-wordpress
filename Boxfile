@@ -5,6 +5,7 @@ web1:
     - mysql
     - curl
     - zip
+    - apc
   shared_writable_dirs:
     - wp-content/
     - setup/
