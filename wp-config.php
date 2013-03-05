@@ -75,6 +75,9 @@ if ( file_exists( dirname( __FILE__ ) . '/memcached.php' ) )
 define( 'WP_STAGE', '%%WP_STAGE%%' );
 define( 'STAGING_DOMAIN', '%%WP_STAGING_DOMAIN%%' ); // Does magic in WP Stack to handle staging domain rewriting
 
+// Add caching.
+define('WP_CACHE', true);
+
 // ===================
 // Bootstrap WordPress
 // ===================
