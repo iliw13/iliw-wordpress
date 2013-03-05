@@ -1,5 +1,10 @@
 web1:
   name: wordpress
+  php_extensions:
+    - memcache
+    - mysql
+    - curl
+    - zip
   shared_writable_dirs:
     - wp-content/
     - setup/
@@ -11,4 +16,5 @@ db1:
   type: mysql
 
 cache1:
+  name: iliw-wordpress-cache
   type: memcached
