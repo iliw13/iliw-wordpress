@@ -83,7 +83,4 @@ define('WP_CACHE', true);
 // ===================
 if ( !defined( 'ABSPATH' ) )
 	define( 'ABSPATH', dirname( __FILE__ ) . '/wp/' );
-
-remove_action('wp_head', 'rsd_link');
-
 require_once( ABSPATH . 'wp-settings.php' );
