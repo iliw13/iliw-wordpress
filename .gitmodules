@@ -7,3 +7,6 @@
 [submodule "content/plugins/yet-another-related-posts-plugin"]
 	path = content/plugins/yet-another-related-posts-plugin
 	url = https://github.com/crowdfavorite-mirrors/wp-yet-another-related-posts-plugin
+[submodule "content/plugins/google-analytics-for-wordpress"]
+	path = content/plugins/google-analytics-for-wordpress
+	url = https://github.com/crowdfavorite-mirrors/wp-google-analytics-for-wordpress.git
