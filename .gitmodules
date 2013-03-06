@@ -13,3 +13,6 @@
 [submodule "content/plugins/wordpress-seo"]
 	path = content/plugins/wordpress-seo
 	url = https://github.com/crowdfavorite-mirrors/wp-wordpress-seo.git
+[submodule "content/plugins/better-wp-security"]
+	path = content/plugins/better-wp-security
+	url = https://github.com/bit51/Better-WP-Security.git
