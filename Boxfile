@@ -11,7 +11,8 @@ web1:
     - setup/
   before_deploy:
     - "cp -rf content/* `pwd`/wp-content/"
-    - "if [ ! -e setup/.htaccess ]; then cp htaccess setup/.htaccess; fi"
+    - "if [ ! -e setup/.htaccess ]; then cp htaccess setup/.htaccess; echo .htaccess moved into place; fi"
+    - "if [ ! -e setup/salts.php ]; then echo '<?php' > setup/salts.php; curl -s https://api.wordpress.org/secret-key/1.1/salt/ >> setup/salts.php; echo Salts added; fi"
 db1:
   name: iliw-wordpress
   type: mysql
