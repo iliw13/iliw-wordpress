@@ -19,3 +19,6 @@
 [submodule "content/plugins/check-email"]
 	path = content/plugins/check-email
 	url = https://github.com/crowdfavorite-mirrors/wp-check-email
+[submodule "content/plugins/wp-mailfrom-ii"]
+	path = content/plugins/wp-mailfrom-ii
+	url = https://github.com/benhuson/wp-mailfrom.git
