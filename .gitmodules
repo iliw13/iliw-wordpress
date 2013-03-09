@@ -16,3 +16,6 @@
 [submodule "content/plugins/better-wp-security"]
 	path = content/plugins/better-wp-security
 	url = https://github.com/bit51/Better-WP-Security.git
+[submodule "content/plugins/check-email"]
+	path = content/plugins/check-email
+	url = https://github.com/crowdfavorite-mirrors/wp-check-email
