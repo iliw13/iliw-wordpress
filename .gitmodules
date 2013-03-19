@@ -22,3 +22,6 @@
 [submodule "content/plugins/wp-mailfrom-ii"]
 	path = content/plugins/wp-mailfrom-ii
 	url = https://github.com/benhuson/wp-mailfrom.git
+[submodule "content/themes/iliw13-theme"]
+	path = content/themes/iliw13-theme
+	url = https://github.com/iliw13/iliw13-theme
