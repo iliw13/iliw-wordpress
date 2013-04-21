@@ -25,3 +25,6 @@
 [submodule "content/themes/iliw13-theme"]
 	path = content/themes/iliw13-theme
 	url = https://github.com/iliw13/iliw13-theme
+[submodule "content/plugins/disqus-comment-system"]
+	path = content/plugins/disqus-comment-system
+	url = https://github.com/crowdfavorite-mirrors/wp-disqus-comment-system.git
